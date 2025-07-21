@@ -2,7 +2,8 @@ from flask import Flask,request, render_template,session,redirect
 import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import firestore
-
+import json
+import os
 cred = credentials.Certificate(json.loads(os.environ.get('GAPPY')))
 firebase_admin.initialize_app(cred)
 db = firestore.client()
