@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin console</title>
+    <link rel="stylesheet" href="{{url_for('static',filename = 'admin.css')}}">
+</head>
+<body>
+    <p style = 'text-align: center;'><a href="/logout">Log out</a></p>
+    <h1>Admin console</h1>
+    <div class="storage" id="st"></div>
+    <script src="{{url_for('static',filename='admin.js')}}"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='stat.css')}}">
+    <title>Submit code</title>
+</head>
+<body>
+    <h2>Submit a request</h2>
+    <form action="/enter">
+        <textarea minlength = "15" name="desc" id="desc" placeholder="Description of what you want making" rows = "3"></textarea>
+        <input name="email" type="email" placeholder="Email">
+        <button type="Submit">Submit</button>
+        <p>An email will be sent to to confirm the order.</p>
+    </form>
+</body>
+</html>
