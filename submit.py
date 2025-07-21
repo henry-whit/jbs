@@ -3,7 +3,7 @@ import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import firestore
 
-cred = credentials.Certificate('C:\\Users\\hdoub\\OneDrive\\Documents\\programming\\barry-server\\submit\\cookie-clicker-d8a58-firebase-adminsdk-ehau2-5792e0a48d.json')
+cred = credentials.Certificate(json.loads(os.environ.get('GAPPY')))
 firebase_admin.initialize_app(cred)
 db = firestore.client()
 app = Flask(__name__)
