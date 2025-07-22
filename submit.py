@@ -54,8 +54,6 @@ def logout():
     return redirect('/control')
 @app.route('/enter')
 def sb():
-    if not session.get('admin'):
-        return render_template('password.html')
     data = {
         "completed":False,
         "description":request.args.get('desc'),
