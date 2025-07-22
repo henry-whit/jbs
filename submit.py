@@ -36,7 +36,7 @@ def control():
 @app.route('/getall')
 def get():
     if not session.get('admin'):
-        return render_template('password.html')
+        return []
     jobs_ref = db.collection('jobs')
     docs = jobs_ref.stream()
     data = []
